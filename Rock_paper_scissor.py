@@ -67,7 +67,7 @@ while s ==True:
             elif b == 's':
                 t = False
             else:
-                print("WHY DO YOU PLAY YOU BLIND")
+                print("INVALID INPUT")
                 t = True
         
         e = game(Comp,b)
@@ -105,7 +105,7 @@ while s ==True:
             elif a == 's':
                 j = False
             else:
-                print("WHY DO YOU PLAY YOU BLIND")
+                print("INVALID INPUT")
                 j = True
        
         t = True
@@ -119,7 +119,7 @@ while s ==True:
             elif b == 's':
                 t = False
             else:
-                print("WHY DO YOU PLAY YOU BLIND")
+                print("INVALID INPUT")
                 t = True
         
         
@@ -146,7 +146,7 @@ while s ==True:
 
 
     else:
-        print("CHOOSE THE GODDAMM WORD ABOVE YOU BLIND MF")
+        print("INVALID INPUT")
         s = True
     
     if s == False:
@@ -163,11 +163,11 @@ while s ==True:
                 s = True
                 h = False
             elif g == 'n':
-                print ('BHAG')
+                print ('Bye')
                 s = False
                 h = False
             else:
-                print("YoU reALly bLiND nEGGa") 
+                print("INVALID INPUT") 
                 s = False
                 h = True
     else:
