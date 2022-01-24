@@ -1,6 +1,8 @@
 import random
 
 
+
+
 def game(c,b):
     
     if c == b:
@@ -40,11 +42,12 @@ while s ==True:
 
 
     if m == 'S':
+        s = False
+       
         
 
         Comp = print(" Comp Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
-        
-        
+            
         
         if no == 1:
             Comp = "s"
@@ -53,9 +56,19 @@ while s ==True:
         else :
             Comp = "r"
         
-        
-        b = input(" YOU Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
-        
+        t = True
+        while t == True:
+            b = input(" YOU Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
+            
+            if b == 'r':
+                t = False
+            elif b == 'p':
+                t = False
+            elif b == 's':
+                t = False
+            else:
+                print("WHY DO YOU PLAY YOU BLIND")
+                t = True
         
         e = game(Comp,b)
         
@@ -78,12 +91,38 @@ while s ==True:
     
     elif m =="M":
 
-
-        a = input (" P1 Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
-            
-        b = input(" P2 Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
+        s =  False
         
-    
+        j = True
+        while j == True:
+        
+            a = input (" P1 Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
+            
+            if a == 'r':
+                j = False
+            elif a == 'p':
+                j = False
+            elif a == 's':
+                j = False
+            else:
+                print("WHY DO YOU PLAY YOU BLIND")
+                j = True
+       
+        t = True
+        while t == True:   
+            b = input(" P2 Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
+            
+            if b == 'r':
+                t = False
+            elif b == 'p':
+                t = False
+            elif b == 's':
+                t = False
+            else:
+                print("WHY DO YOU PLAY YOU BLIND")
+                t = True
+        
+        
         
     
         
@@ -108,27 +147,31 @@ while s ==True:
 
     else:
         print("CHOOSE THE GODDAMM WORD ABOVE YOU BLIND MF")
+        s = True
+    
+    if s == False:
+        h = True
+        while h == True:
 
-    h = True
-    while h == True:
+            
+            g = input('''Do You want to play again
+                Press (y) for yes
+                Press (n) for no\n''')    
 
-        
-        g = input('''Do You want to play again
-            Press (y) for yes
-            Press (n) for no\n''')    
-
-        if g == 'y':
-            print ("Ok")
-            s = True
-            h = False
-        elif g == 'n':
-            print ('BHAG')
-            s = False
-            h = False
-        else:
-            print("YoU reALly bLiND nEGGa") 
-            s = False
-            h = True
+            if g == 'y':
+                print ("Ok")
+                s = True
+                h = False
+            elif g == 'n':
+                print ('BHAG')
+                s = False
+                h = False
+            else:
+                print("YoU reALly bLiND nEGGa") 
+                s = False
+                h = True
+    else:
+        pass
 
 
 
