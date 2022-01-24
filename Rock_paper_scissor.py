@@ -81,7 +81,7 @@ elif m =="M":
         
     b = input(" P2 Choose : Rock(r) , Paper(p) or Scissor(s) ? ")
     
-    e = game(a,b)
+  
     
   
     
